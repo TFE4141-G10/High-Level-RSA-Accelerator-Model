@@ -24,12 +24,11 @@ def binary():
         C = C*C % n
         if e[k-2-i] == 1:
             C = (C*M) % n
-        print(C)
     print(C)
 
 
 if __name__ == '__main__':
-    print("Binary:")
+    print("Binary IS 1 WRONG SHOULD BE 46:")
     binary()
     print("Blakly:")
     blakly()
