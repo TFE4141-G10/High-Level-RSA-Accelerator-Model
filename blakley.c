@@ -41,7 +41,7 @@ uint8_t modexp_binary(uint8_t a, uint8_t b, uint8_t n) {
         remainder = 1;
     }
     for (uint8_t i = word_length - 1; i > 0; i--) {
-        bitmask = (1 << (word_length - i)); // i trails 1 bit so that i>0 spans number
+        bitmask = (1 << (i - 1));
         remainder = modmul_blakley(remainder, remainder, n);
         if (bitmask & b) {
             remainder = modmul_blakley(remainder, a, n);
