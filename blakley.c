@@ -4,7 +4,6 @@
 /**
  * @brief   Calculates the modular multiplication a*b mod n 
  *          using the Blakley algorithm
- * 
  * @param a 
  * @param b 
  * @param n 
@@ -25,7 +24,6 @@ uint8_t modmul_blakley(uint8_t a, uint8_t b, uint8_t n) {
 /**
  * @brief   Calculates the modular exponentiation a^b mod n
  *          using the Left-to-Right binary method
- * 
  * @param a in the case of RSA, this is the message 
  * @param b in the case of RSA, this is the encryption
  * @param n 
